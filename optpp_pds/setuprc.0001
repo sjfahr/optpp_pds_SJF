@@ -1,0 +1,36 @@
+
+[THREAD MODEL]
+OpenCL
+
+[CASE FILE]
+optpp_pds/case.0001.setup
+
+[MESH FILE]
+meshes/cooledConformMesh.inp
+
+[MRI FILE]
+./mridata.setup
+
+[POLYNOMIAL ORDER]
+3
+
+[DT]
+0.25
+
+[FINAL TIME]
+290
+
+[PCG TOLERANCE]
+1e-6
+
+[GPU PLATFORM]
+0
+
+[GPU DEVICE]
+1
+
+[SCREENSHOT OUTPUT]
+/dev/shm/outputs/dakota
+
+[SCREENSHOT INTERVAL]
+290

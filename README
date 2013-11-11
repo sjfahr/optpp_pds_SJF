@@ -1,0 +1,45 @@
+parallel direct search in Dakota
+http://dakota.sandia.gov/docs/dakota/5.2/html-ref/MethodCommands.html#MethodOPTPP
+
+
+Example usage:
+
+$ dakota dakota_optpp_pds.in
+Running MPI executable in serial mode.
+DAKOTA version 5.2 released 11/30/2011.
+Subversion revision 873 built Jan  8 2013 23:05:25.
+Constructing Single Method Strategy...
+Writing new restart file dakota.rst
+methodName = optpp_pds
+gradientType = none
+hessianType = none
+
+>>>>> Running Single Method Strategy.
+
+>>>>> Running optpp_pds iterator.
+
+>>>>> optpp_pds: pre-run phase.
+
+>>>>> optpp_pds: core run phase.
+
+------------------------------
+Begin Function Evaluation    1
+------------------------------
+Parameters for function evaluation 1:
+                      0.0000000000e+00 robin_coeff
+                      2.1000000000e+01 probe_init
+                      9.0000000000e-01 anfact_healthy
+                      5.0000000000e+01 mu_a_healthy
+                      8.0000000000e+03 mu_s_healthy
+                      5.0000000000e-01 k_0_healthy
+                      6.0000000000e+00 w_0_healthy
+
+blocking fork: python /workarea/fuentes/github/optpp_pds/brainsearch.py --param_file  optpp_pds/optpp_pds.in.1 optpp_pds/optpp_pds.out.1
+ln -sf /workarea/fuentes/braincode/tym1/occa occa
+ln -sf /workarea/fuentes/braincode/tym1/libocca libocca
+ln -sf /workarea/fuentes/braincode/tym1/meshes meshes
+Running BrainNek...
+writing optpp_pds/setuprc.0001
+writing optpp_pds/case.0001.setup
+writing optpp_pds/material_types.0001.setup
+/workarea/fuentes/braincode/tym1/main optpp_pds/setuprc.0001 -heattransfercoefficient 0.000000000000000e+00 -coolanttemperature  2.100000000000000e+01 > optpp_pds/run.0001.log 2>&1
