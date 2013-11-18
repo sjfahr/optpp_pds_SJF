@@ -1,0 +1,31 @@
+cd ../workdir/Patient0002/000/opt
+echo 1 > index.txt
+dakota dakota_matlab.in
+
+cd ../workdir/Patient0002/001/opt
+cd ../workdir Patient0002/010/opt
+cd ../workdir Patient0002/017/opt
+cd ../workdir Patient0002/020/opt
+cd ../workdir Patient0002/021/opt
+cd ../workdir Patient0002/022/opt
+cd ../workdir Patient0003/002/opt
+cd ../workdir Patient0003/013/opt
+cd ../workdir Patient0003/018/opt
+cd ../workdir Patient0003/025/opt
+cd ../workdir Patient0004/003/opt
+cd ../workdir Patient0004/006/opt
+cd ../workdir Patient0005/004/opt
+cd ../workdir Patient0005/008/opt
+cd ../workdir Patient0005/012/opt
+cd ../workdir Patient0006/005/opt
+cd ../workdir Patient0006/007/opt
+cd ../workdir Patient0006/009/opt
+cd ../workdir Patient0006/019/opt
+cd ../workdir Patient0006/023/opt
+cd ../workdir Patient0006/024/opt
+cd ../workdir Patient0007/011/opt
+cd ../workdir Patient0007/015/opt
+cd ../workdir Patient0007/026/opt
+cd ../workdir Patient0008/014/opt
+cd ../workdir Patient0008/016/opt
+cd ../workdir Patient0008/027/opt
